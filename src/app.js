@@ -1,11 +1,13 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+var pronoun = ["the", "our", "to", "Their"];
+var adj = ["great", "big", "most", "better"];
+var noun = ["jogger", "racoon", "feel", "port", "chacha", "nopor", "planet"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+for (let p = 0; p < pronoun.length; p++) {
+  for (let a = 0; a < adj.length; a++) {
+    for (let n = 0; n < noun.length; n++) {
+      console.log(`${pronoun[p]}${adj[a]}${noun[n]}.com`);
+    }
+  }
+}
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+/* const randomPro = () => Math.floor(Math.random() * pron); */
